@@ -1,1 +1,2 @@
-
+This folder contains the firmware for the project. This may consist of Raspberry Pi Pico programs, VHDL code, or any other code used to define the 
+behavior of the PCB. It is NOT intended to include ROM images or other software that may be written for the PCB.
