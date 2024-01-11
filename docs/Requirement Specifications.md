@@ -1,21 +1,19 @@
 # TS2068E Hardware Design Requirements Specification
 
-
-Revision History
-
+## 1. Revision History
 
 
 
-Introduction
-Purpose and Scope 
+## Introduction
+### Purpose and Scope 
 This document serves as a requirements specification for the design of the TS2068E computer. This document is intended to define the behavior of the TS2068E and does not, in general, dictate specific design methods or design choices. This document will contain both requirements and design goals. Requirements must be part of the design while goals may or may not appear in the design at the design engineers’ discretion.
 
-Acronyms and Abbreviations 
+### Acronyms and Abbreviations 
 
-Referenced Documents  
+## Referenced Documents  
 
 
-Hardware Description
+## Hardware Description
 Design Constraints
 
 Packaging/Installation Design
