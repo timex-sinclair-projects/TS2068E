@@ -14,8 +14,7 @@ Acronym or Abbreviation	Description
 - **ASCII**	A standardized 8 bit code used to represent character data in computerized data systems.
 - **char**	8 bit byte
 - **int	32** bit double word
-	
-ASCIIZ*n	UTF-8 null terminated C compatible string
+- **ASCIIZ*n**	UTF-8 null terminated C compatible string
 
 
 ### 1.3 Referenced Documents  
