@@ -1,11 +1,11 @@
 # TS2068E Hardware Design Requirements Specification
 
 ## Revision History
-|CO #|	Revision|	Change Description|	"Effective Date"|	Author|
+|CO #|	Revision|Change Description|Effective Date|Author|
 |---|---|---|---|---|
-||	1|	Initial draft.| 	N/A|	Jeff Burrell|
-||	1.1|	 Add Features|	N/A|	Gus Pane|
-||	1.2|	Comments||	David Anderson|
+||1|Initial draft.| N/A|Jeff Burrell|
+||1.1|Add Features|N/A|Gus Pane|
+||1.2|Comments||David Anderson|
 
 
 
