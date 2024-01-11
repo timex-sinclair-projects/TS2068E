@@ -9,6 +9,14 @@
 This document serves as a requirements specification for the design of the TS2068E computer. This document is intended to define the behavior of the TS2068E and does not, in general, dictate specific design methods or design choices. This document will contain both requirements and design goals. Requirements must be part of the design while goals may or may not appear in the design at the design engineers’ discretion.
 
 ### 1.2 Acronyms and Abbreviations 
+Acronym or Abbreviation	Description
+	
+- **ASCII**	A standardized 8 bit code used to represent character data in computerized data systems.
+- **char**	8 bit byte
+- **int	32** bit double word
+	
+ASCIIZ*n	UTF-8 null terminated C compatible string
+
 
 ### 1.3 Referenced Documents  
 
