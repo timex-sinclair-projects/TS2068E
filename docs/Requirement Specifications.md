@@ -18,6 +18,10 @@ Acronym or Abbreviation	Description
 
 
 ### 1.3 Referenced Documents  
+| Document # | Document Title | Doc Revision |
+|---|---|---|
+||Timex Sinclair User Manual|	N/A|
+||Timex Sinclair Technical Manual|	N/A|
 
 
 ## 2. Hardware Description
