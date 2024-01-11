@@ -42,10 +42,15 @@ If a processor core is used, it is permissible to extend the Z80 instruction set
 The TS2068E shall have a USB keyboard interface.
 The method used for the interface is at the engineer’s discretion.
 ### 5.3 TS2068 5V Expansion Bus
-There shall be an expansion bus that is compatible with the original TS2068.
-The expansion bus shall be compatible with 5V TTL logic.
+
+There shall be an expansion bus that is compatible with the original TS2068. The expansion bus shall be compatible with 5V TTL logic.
+
+-  External
+
 ### 5.4 TS2068 3V3 Expansion Bus
 There shall be a 3.3V expansion connector that is compatible with the original TS268. The expansion be compatible with 3.3V TTL logic.
+- Internal
+- 4-5 slots
 ### 5.5 RAM Memory
 There shall be at least 128k bytes of memory available for program memory space. The upper limit is at the engineer’s discretion.
 ### 5.6 Video Modes
