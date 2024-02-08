@@ -6,6 +6,7 @@
 ||1|Initial draft.| N/A|Jeff Burrell|
 ||1.1|Add Features|N/A|Gus Pane|
 ||1.2|Comments||David Anderson|
+||1.3|Revised based on TS group feedback|David Anderson|
 
 
 
@@ -34,27 +35,33 @@ Acronym or Abbreviation	Description
 ## 3. Design Constraints
 ## 4. Packaging/Installation Design
 ## 5. Design Requirements
-### 5.1 Z80 Processor
-The processor shall be a Z80 processor with static design. The processor may be a cycle accurate and instruction accurate FPGA core.
+### 5.1 Z80 Processor in FPGA
+The processor shall be a Z80 processor with static design. The processor may be a cycle accurate and instruction accurate Trion T20Q144C3 FPGA core.
 
 If a processor core is used, it is permissible to extend the Z80 instruction set so long as the extensions do not affect the cycle and instruction accuracy of the core. Any instruction extensions shall be documented in the TS2068E manual.
 ### 5.2 Keyboard
 The TS2068E shall have a USB keyboard interface.
-The method used for the interface is at the engineer’s discretion.
-### 5.3 TS2068 5V Expansion Bus
 
-There shall be an expansion bus that is compatible with the original TS2068. The expansion bus shall be compatible with 5V TTL logic.
+The method used for the interface is at the engineer’s discretion.
+### 5.3 ZX Spectrum 5V Expansion Bus
+
+There shall be an expansion bus that is compatible with the Sinclair ZX Spectrum. The expansion bus shall be compatible with 5V TTL logic.
 
 -  External
 
 ### 5.4 TS2068 3V3 Expansion Bus
-There shall be a 3.3V expansion connector that is compatible with the original TS268. The expansion be compatible with 3.3V TTL logic.
+There may be a 3.3V expansion connector that is compatible with the original TS268. The expansion be compatible with 3.3V TTL logic. The connector will support a daughter card with expansion slots.
 - Internal
 - 4-5 slots
 ### 5.5 RAM Memory
-There shall be at least 128k bytes of memory available for program memory space. The upper limit is at the engineer’s discretion.
+There shall be at least 512k bytes of memory available. The upper limit is at the engineer’s discretion.
 ### 5.6 Video Modes
 All Standard TS2068 video modes shall be implemented.
+- All standard TS2068 modes
+- Additional modes using TS video memory mapping
+- ULA Plus mode
+- 80 column text mode terminal
+- 320x240 hires graphics mode, 256 colors from a palette of 4096
 ### 5.7 ULA Plus Video
 ULA Plus video shall be implemented in full.
 ### 5.8 Legacy TS2068 Software Compatibility
@@ -62,7 +69,7 @@ Legacy TS2068 software shall be supported by the hardware to the greatest extent
 ### 5.9 Sound
 There shall be a minimum of one AY8912 or equivalent IC and/or core in the design.
 ### 5.10 TS2068 Joysticks
-There shall be provision for two TS2068 compatible joy sticks in the design
+There shall be provision for two TS2068 (Atari) compatible joy sticks in the design
 ### 5.11 ZX Spectrum Joystick
 There shall be provision for a Kempston compatible joystick interface in the design
 ### 5.12 Mass Storage
@@ -70,12 +77,12 @@ There shall be provision for mass storage in the design. Mass storage may be any
 ### 5.13 WiFi
 There shall be provision for wifi connectivity
 ### 5.14 IF1 Type Support
-There shall be provision in the hardware for Sinclair Interface 1 support. This support shall have a means to enable or disable support in the hardware.
+There may be provision in the hardware for Sinclair Interface 1 support. This support shall have a means to enable or disable support in the hardware.
 This support shall intercept the RST0 and RST8 addresses and allow for automatic memory bank switching when an instruction if fetched from either of these addresses.
 ### 5.15 Serial Port
-There shall be a RS232 serial port with hardware handshaking. The serial port shall have programmable baud rates that are compatible with industry standard rates.
+There shall be a RS232 serial port with hardware handshaking, provided via pin header. The serial port shall have programmable baud rates that are compatible with industry standard rates.
 ### 5.16 Parallel Port
-There shall be an 8 bit parallel port with 4 handshaking lines. The port shall allow connection to a printer using the Centronics protocol.
+There may be an 8 bit parallel port with 4 handshaking lines. The port shall allow connection to a printer using the Centronics protocol.
 ### 5.17 Memory Mapping
 #### 5.17.1 TS2068 Compatibility
 The hardware shall allow mapping of memory that is compatible with the TS2068 (Home, Exrom, Dock). See the TS2068 technical manual for details.
@@ -92,7 +99,7 @@ It is desired that a 48K ZX Spectrum compatible expansion bus be available.
 Implementation of the bus is at the engineer’s discretion.
 ### 6.2 ZX Spectrum Software Support
 Legacy ZX Spectrum software should be supported by the hardware to the greatest extent possible.
-### 6.3 Secondary Joystick
+### 6.3 Tertiary Joystick
 A tertiary joystick is desired. This joystick will be interrogated at different, specified I/O or memory addresses.
 ### 6.4 Timex FDD Disk Commands
 It is desired that the TC2068 floppy disk be supported
