@@ -6,7 +6,7 @@
 ||1|Initial draft.| N/A|Jeff Burrell|
 ||1.1|Add Features|N/A|Gus Pane|
 ||1.2|Comments||David Anderson|
-||1.3|Revised based on TS group feedback|David Anderson|
+||1.3|Revised based on TS group feedback||David Anderson|
 
 
 
